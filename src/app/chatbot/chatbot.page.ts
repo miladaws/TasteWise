@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-chatbot',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class ChatbotPage {
 
-  constructor() {}
+  message: string = "";
+  displayMessages: string[] = [];
+
+  constructor(private sanitizer: DomSanitizer) {}
+
+  sendMessage() {
+    this.displayMessages.push(this.message);
+  }
 
 }
