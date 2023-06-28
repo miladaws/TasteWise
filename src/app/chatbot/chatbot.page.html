@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Chatbot
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Chatbot</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <div class="card">
+      <div id="header">
+        <h1>Ask me!</h1>
+      </div>
+      <div id="message-section">
+        <div class="message" id="bot">
+          <span id="bot-response">Hey buddy! My name is TasteWise and I am here to help you to choose the best restaurant in the city! Ask me!</span>
+        </div>
+        <div class="message" id="user">
+          <span id="user-response">Hello buddy</span>
+        </div>
+      </div>
+      <div id="input-section">
+        <input id="input" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus"/>
+        <button class="send" onclick="sendMessage()">
+          Send!
+          <div class="circle">
+            <i class="zmdi zmdi-mail-send"></i>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <br /><br /><br />>
+
+</ion-content>
